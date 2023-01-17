@@ -5,7 +5,11 @@ const yaml = require('yamljs');
 const json5 = require('json5');
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
+  devServer: {
+    static: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
@@ -16,6 +20,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+  // optimization: {
+  //   runtimeChunk: 'single',
+  // },
   module: {
     rules: [
       {
