@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'JurassicPark';
+  src: url('./JurassicPark.woff2') format('woff2'),
+    url('./JurassicPark.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background: url('./icon.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.hello {
+  color: red;
+  font-size: 10rem;
+  font-family: 'JurassicPark';
+}
